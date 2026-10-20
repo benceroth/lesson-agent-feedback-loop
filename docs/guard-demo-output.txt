@@ -1,0 +1,5 @@
+guard ON,  hidden checks ON : outcome=stopped:stalled        attempt categories=guard_violation,guard_violation
+guard OFF, hidden checks ON : outcome=stopped:stalled        attempt categories=hidden_failure,hidden_failure,hidden_failure
+guard OFF, hidden checks OFF: outcome=passed                 attempt categories=ok
+
+Only the last row 'passes', and it is a lie: the tests were edited, not the code. Guard and hidden checks each catch it.

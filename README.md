@@ -15,6 +15,7 @@ Requires Python 3.12+ and `pytest` (`pip install -r requirements-dev.txt`). Noth
 ```text
 python -m loop validate-tasks            # starters fail, every scripted scenario ends as declared
 python -m loop guard-demo                # a cheating attempt, with the guard on and off
+python break-it/self-review/run.py       # more failure scenarios live in break-it/
 python -m loop run 001 --scenario needs-visible-feedback --mode loop
 python -m loop experiment --runs 10      # all tasks x 3 modes, scripted provider (~6 min on Windows)
 python -m loop verify-results            # re-run the committed experiment and compare
@@ -61,16 +62,49 @@ Whole-suite rows; full table in [`experiments/results/summary.md`](experiments/r
 
 These numbers are a function of the canned scenarios. They demonstrate the measurements (pass@1, pass within budget, cost per success, false confidence, stall counts), not model quality. Protocol for real runs: [`experiments/single-shot-vs-loop.md`](experiments/single-shot-vs-loop.md).
 
-## Use a real model (optional)
+The cheating attempt caught by the guard is captured in [`docs/guard-demo-output.txt`](docs/guard-demo-output.txt) (output of `python -m loop guard-demo`). Regenerate the charts and table with `python -m loop experiment --runs 10` and check them with `python -m loop verify-results`.
+
+## Now break it
+
+Three scenarios that remove a safeguard on purpose, each with a README and a runner: [`break-it/`](break-it/README.md).
+
+```text
+python break-it/no-stop-condition/run.py   # no limits: only a demo cut-off ends the run
+python break-it/weakened-tests/run.py      # tests writable, hidden checks off: a lie passes
+python break-it/self-review/run.py         # reviewer shares the builder's blind spot
+```
+
+## Run it with your own model
 
 ```text
 set LOOP_API_KEY=...            # never commit keys
 set LOOP_MODEL=your-model
+set LOOP_REVIEWER_MODEL=other-model   # optional; use a different model for the reviewer
 set LOOP_BASE_URL=https://api.openai.com/v1   # any /chat/completions server; http only for localhost
 python -m loop run 001 --provider openai --mode loop
+python -m loop experiment --provider openai --runs 10 --out experiments/local/my-model
 ```
 
+On macOS/Linux use `export` instead of `set`. `experiments/local/` is git-ignored; it gets `summary.md`, the SVG charts and `attempts.jsonl`. Follow the protocol in [`experiments/single-shot-vs-loop.md`](experiments/single-shot-vs-loop.md): at least 10 runs per task per mode, a fixed seed, and counts reported alongside percentages.
+
 Prompts contain task code and generated code is executed locally; read [SECURITY.md](SECURITY.md) and `docs/safeguards.md` first.
+
+## Share your result
+
+Real-model results are welcome as an issue or a discussion thread on this repository, if the repository has discussions enabled. Include:
+
+- model name and version, provider type, date
+- N, seed, budgets, and the harness commit (`git rev-parse HEAD`)
+- your `summary.md` (and `provenance.json`)
+- anything surprising, especially a pass on task 005 (that means a check or the guard is broken)
+
+Label it "teaching experiment, not a benchmark" and do not mix it with scripted results.
+
+## Extend it
+
+1. **Add a sixth task.** Copy a folder under `tasks/`, write a `BRIEF.md`, hidden tests and a `scripted.py` with `correct` and one failing scenario, then make `python -m loop validate-tasks` pass.
+2. **Add a stop condition.** Stop the loop when the same failing test names repeat three attempts in a row, with a test in `tests/test_budget.py`.
+3. **Harden the reviewer.** Make a finding blocking only if its evidence names a file that is in the diff, then add a case to `tests/test_reviewer.py`.
 
 ## Known limits
 
@@ -85,7 +119,8 @@ Prompts contain task code and generated code is executed locally; read [SECURITY
 loop/          runner, budget, guard, reviewer, checks/, providers/, metrics, chart, cli
 tasks/         001..005: BRIEF.md, task.json, starter/, hidden/, scripted.py
 templates/     review-prompt.md, task-brief.md, AGENTS.md
-docs/          when-loops-fail.md, safeguards.md
+break-it/      three scenarios that remove a safeguard on purpose
+docs/          when-loops-fail.md, safeguards.md, guard-demo-output.txt
 experiments/   single-shot-vs-loop.md, results/ (committed scripted demo)
 tests/         tests for the lab itself
 ```
