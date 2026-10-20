@@ -1,0 +1,9 @@
+{
+  "id": "001-fix-off-by-one",
+  "title": "Fix the off-by-one in paginate()",
+  "editable": ["src/pagination.py"],
+  "visible_tests": ["tests"],
+  "hidden": {"kind": "pytest"},
+  "max_changed_files": 1,
+  "max_changed_lines": 30
+}

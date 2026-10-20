@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="920" height="460" role="img" aria-label="Pass within budget by task and mode">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="70" y="28" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1b1f24">Pass within budget by task and mode</text>
+<text x="70" y="48" font-family="sans-serif" font-size="12" fill="#57606a">scripted / scripted-demo - N=10 per task per mode - 2026-10-20 - SCRIPTED DEMO, NOT A MODEL BENCHMARK</text>
+<line x1="70" y1="390.0" x2="900" y2="390.0" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="394.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">0%</text>
+<line x1="70" y1="312.5" x2="900" y2="312.5" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="316.5" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">25%</text>
+<line x1="70" y1="235.0" x2="900" y2="235.0" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="239.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">50%</text>
+<line x1="70" y1="157.5" x2="900" y2="157.5" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="161.5" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">75%</text>
+<line x1="70" y1="80.0" x2="900" y2="80.0" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="84.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">100%</text>
+<text x="14" y="235" transform="rotate(-90 14 235)" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#57606a">runs that passed all checks</text>
+<rect x="85.2" y="266.0" width="34.0" height="124.0" fill="#8a94a6"><title>001-fix-off-by-one / single-shot: 40%</title></rect>
+<text x="102.2" y="262.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">40%</text>
+<rect x="121.2" y="173.0" width="34.0" height="217.0" fill="#2f6fdb"><title>001-fix-off-by-one / loop: 70%</title></rect>
+<text x="138.2" y="169.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">70%</text>
+<rect x="157.2" y="173.0" width="34.0" height="217.0" fill="#e0832b"><title>001-fix-off-by-one / loop-review: 70%</title></rect>
+<text x="174.2" y="169.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">70%</text>
+<text x="139.2" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">001</text>
+<text x="139.2" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">fix-off-by-one</text>
+<rect x="223.5" y="142.0" width="34.0" height="248.0" fill="#8a94a6"><title>002-add-input-validation / single-shot: 80%</title></rect>
+<text x="240.5" y="138.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">80%</text>
+<rect x="259.5" y="80.0" width="34.0" height="310.0" fill="#2f6fdb"><title>002-add-input-validation / loop: 100%</title></rect>
+<text x="276.5" y="76.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">100%</text>
+<rect x="295.5" y="80.0" width="34.0" height="310.0" fill="#e0832b"><title>002-add-input-validation / loop-review: 100%</title></rect>
+<text x="312.5" y="76.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">100%</text>
+<text x="277.5" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">002</text>
+<text x="277.5" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">add-input-validation</text>
+<rect x="361.8" y="235.0" width="34.0" height="155.0" fill="#8a94a6"><title>003-refactor-keep-behavior / single-shot: 50%</title></rect>
+<text x="378.8" y="231.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">50%</text>
+<rect x="397.8" y="142.0" width="34.0" height="248.0" fill="#2f6fdb"><title>003-refactor-keep-behavior / loop: 80%</title></rect>
+<text x="414.8" y="138.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">80%</text>
+<rect x="433.8" y="142.0" width="34.0" height="248.0" fill="#e0832b"><title>003-refactor-keep-behavior / loop-review: 80%</title></rect>
+<text x="450.8" y="138.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">80%</text>
+<text x="415.8" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">003</text>
+<text x="415.8" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">refactor-keep-behavior</text>
+<rect x="500.2" y="297.0" width="34.0" height="93.0" fill="#8a94a6"><title>004-write-missing-tests / single-shot: 30%</title></rect>
+<text x="517.2" y="293.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">30%</text>
+<rect x="536.2" y="235.0" width="34.0" height="155.0" fill="#2f6fdb"><title>004-write-missing-tests / loop: 50%</title></rect>
+<text x="553.2" y="231.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">50%</text>
+<rect x="572.2" y="235.0" width="34.0" height="155.0" fill="#e0832b"><title>004-write-missing-tests / loop-review: 50%</title></rect>
+<text x="589.2" y="231.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">50%</text>
+<text x="554.2" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">004</text>
+<text x="554.2" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">write-missing-tests</text>
+<rect x="638.5" y="390.0" width="34.0" height="0.0" fill="#8a94a6"><title>005-impossible-spec / single-shot: 0%</title></rect>
+<text x="655.5" y="386.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">0%</text>
+<rect x="674.5" y="390.0" width="34.0" height="0.0" fill="#2f6fdb"><title>005-impossible-spec / loop: 0%</title></rect>
+<text x="691.5" y="386.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">0%</text>
+<rect x="710.5" y="390.0" width="34.0" height="0.0" fill="#e0832b"><title>005-impossible-spec / loop-review: 0%</title></rect>
+<text x="727.5" y="386.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">0%</text>
+<text x="692.5" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">005</text>
+<text x="692.5" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">impossible-spec</text>
+<rect x="776.8" y="266.0" width="34.0" height="124.0" fill="#8a94a6"><title>ALL / single-shot: 40%</title></rect>
+<text x="793.8" y="262.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">40%</text>
+<rect x="812.8" y="204.0" width="34.0" height="186.0" fill="#2f6fdb"><title>ALL / loop: 60%</title></rect>
+<text x="829.8" y="200.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">60%</text>
+<rect x="848.8" y="204.0" width="34.0" height="186.0" fill="#e0832b"><title>ALL / loop-review: 60%</title></rect>
+<text x="865.8" y="200.0" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">60%</text>
+<text x="830.8" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">ALL</text>
+<text x="830.8" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a"></text>
+<rect x="70" y="438" width="12" height="12" fill="#8a94a6"/>
+<text x="88" y="448" font-family="sans-serif" font-size="12" fill="#1b1f24">single-shot</text>
+<rect x="188" y="438" width="12" height="12" fill="#2f6fdb"/>
+<text x="206" y="448" font-family="sans-serif" font-size="12" fill="#1b1f24">loop</text>
+<rect x="250" y="438" width="12" height="12" fill="#e0832b"/>
+<text x="268" y="448" font-family="sans-serif" font-size="12" fill="#1b1f24">loop-review</text>
+</svg>

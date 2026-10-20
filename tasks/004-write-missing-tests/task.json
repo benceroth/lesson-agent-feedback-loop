@@ -1,0 +1,9 @@
+{
+  "id": "004-write-missing-tests",
+  "title": "Write the missing tests for moving_average()",
+  "editable": ["tests/test_generated.py"],
+  "visible_tests": ["tests"],
+  "hidden": {"kind": "mutants", "module": "src/rolling.py"},
+  "max_changed_files": 1,
+  "max_changed_lines": 80
+}

@@ -1,0 +1,10 @@
+{
+  "id": "002-add-input-validation",
+  "title": "Add input validation to parse_quantity()",
+  "editable": ["src/quantity.py"],
+  "visible_tests": ["tests"],
+  "hidden": {"kind": "pytest"},
+  "audit": true,
+  "max_changed_files": 1,
+  "max_changed_lines": 40
+}

@@ -1,0 +1,9 @@
+{
+  "id": "003-refactor-keep-behavior",
+  "title": "Refactor shipping_cost() without changing behavior",
+  "editable": ["src/shipping.py"],
+  "visible_tests": ["tests"],
+  "hidden": {"kind": "pytest"},
+  "max_changed_files": 1,
+  "max_changed_lines": 60
+}

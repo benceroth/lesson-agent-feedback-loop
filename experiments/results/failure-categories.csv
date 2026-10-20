@@ -1,0 +1,11 @@
+mode,category,attempts
+single-shot,guard_violation,5
+single-shot,hidden_failure,15
+single-shot,visible_failure,10
+loop,guard_violation,10
+loop,hidden_failure,31
+loop,visible_failure,26
+loop-review,guard_violation,10
+loop-review,hidden_failure,31
+loop-review,review_blocked,3
+loop-review,visible_failure,26

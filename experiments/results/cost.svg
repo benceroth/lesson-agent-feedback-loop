@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="920" height="460" role="img" aria-label="Mean cost proxy per run (tokens, ~4 chars each)">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="70" y="28" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1b1f24">Mean cost proxy per run (tokens, ~4 chars each)</text>
+<text x="70" y="48" font-family="sans-serif" font-size="12" fill="#57606a">scripted / scripted-demo - N=10 per task per mode - 2026-10-20 - SCRIPTED DEMO, NOT A MODEL BENCHMARK</text>
+<line x1="70" y1="390.0" x2="900" y2="390.0" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="394.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">0</text>
+<line x1="70" y1="312.5" x2="900" y2="312.5" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="316.5" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">710</text>
+<line x1="70" y1="235.0" x2="900" y2="235.0" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="239.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">1,420</text>
+<line x1="70" y1="157.5" x2="900" y2="157.5" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="161.5" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">2,129</text>
+<line x1="70" y1="80.0" x2="900" y2="80.0" stroke="#d0d7de" stroke-width="1"/>
+<text x="62" y="84.0" text-anchor="end" font-family="sans-serif" font-size="11" fill="#57606a">2,839</text>
+<text x="14" y="235" transform="rotate(-90 14 235)" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#57606a">tokens per run</text>
+<rect x="85.2" y="337.3" width="34.0" height="52.7" fill="#8a94a6"><title>001-fix-off-by-one / single-shot: 483</title></rect>
+<text x="102.2" y="333.3" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">483</text>
+<rect x="121.2" y="295.7" width="34.0" height="94.3" fill="#2f6fdb"><title>001-fix-off-by-one / loop: 864</title></rect>
+<text x="138.2" y="291.7" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">864</text>
+<rect x="157.2" y="242.6" width="34.0" height="147.4" fill="#e0832b"><title>001-fix-off-by-one / loop-review: 1,350</title></rect>
+<text x="174.2" y="238.6" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">1,350</text>
+<text x="139.2" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">001</text>
+<text x="139.2" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">fix-off-by-one</text>
+<rect x="223.5" y="325.9" width="34.0" height="64.1" fill="#8a94a6"><title>002-add-input-validation / single-shot: 587</title></rect>
+<text x="240.5" y="321.9" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">587</text>
+<rect x="259.5" y="310.6" width="34.0" height="79.4" fill="#2f6fdb"><title>002-add-input-validation / loop: 727</title></rect>
+<text x="276.5" y="306.6" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">727</text>
+<rect x="295.5" y="177.7" width="34.0" height="212.3" fill="#e0832b"><title>002-add-input-validation / loop-review: 1,944</title></rect>
+<text x="312.5" y="173.7" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">1,944</text>
+<text x="277.5" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">002</text>
+<text x="277.5" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">add-input-validation</text>
+<rect x="361.8" y="291.8" width="34.0" height="98.2" fill="#8a94a6"><title>003-refactor-keep-behavior / single-shot: 899</title></rect>
+<text x="378.8" y="287.8" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">899</text>
+<rect x="397.8" y="194.2" width="34.0" height="195.8" fill="#2f6fdb"><title>003-refactor-keep-behavior / loop: 1,793</title></rect>
+<text x="414.8" y="190.2" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">1,793</text>
+<rect x="433.8" y="108.2" width="34.0" height="281.8" fill="#e0832b"><title>003-refactor-keep-behavior / loop-review: 2,581</title></rect>
+<text x="450.8" y="104.2" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">2,581</text>
+<text x="415.8" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">003</text>
+<text x="415.8" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">refactor-keep-behavior</text>
+<rect x="500.2" y="328.6" width="34.0" height="61.4" fill="#8a94a6"><title>004-write-missing-tests / single-shot: 562</title></rect>
+<text x="517.2" y="324.6" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">562</text>
+<rect x="536.2" y="233.3" width="34.0" height="156.7" fill="#2f6fdb"><title>004-write-missing-tests / loop: 1,435</title></rect>
+<text x="553.2" y="229.3" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">1,435</text>
+<rect x="572.2" y="190.4" width="34.0" height="199.6" fill="#e0832b"><title>004-write-missing-tests / loop-review: 1,828</title></rect>
+<text x="589.2" y="186.4" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">1,828</text>
+<text x="554.2" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">004</text>
+<text x="554.2" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">write-missing-tests</text>
+<rect x="638.5" y="340.1" width="34.0" height="49.9" fill="#8a94a6"><title>005-impossible-spec / single-shot: 457</title></rect>
+<text x="655.5" y="336.1" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">457</text>
+<rect x="674.5" y="227.7" width="34.0" height="162.3" fill="#2f6fdb"><title>005-impossible-spec / loop: 1,486</title></rect>
+<text x="691.5" y="223.7" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">1,486</text>
+<rect x="710.5" y="227.7" width="34.0" height="162.3" fill="#e0832b"><title>005-impossible-spec / loop-review: 1,486</title></rect>
+<text x="727.5" y="223.7" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">1,486</text>
+<text x="692.5" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">005</text>
+<text x="692.5" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a">impossible-spec</text>
+<rect x="776.8" y="324.7" width="34.0" height="65.3" fill="#8a94a6"><title>ALL / single-shot: 598</title></rect>
+<text x="793.8" y="320.7" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">598</text>
+<rect x="812.8" y="252.3" width="34.0" height="137.7" fill="#2f6fdb"><title>ALL / loop: 1,261</title></rect>
+<text x="829.8" y="248.3" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">1,261</text>
+<rect x="848.8" y="189.3" width="34.0" height="200.7" fill="#e0832b"><title>ALL / loop-review: 1,838</title></rect>
+<text x="865.8" y="185.3" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#1b1f24">1,838</text>
+<text x="830.8" y="408" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#1b1f24">ALL</text>
+<text x="830.8" y="422" text-anchor="middle" font-family="sans-serif" font-size="9" fill="#57606a"></text>
+<rect x="70" y="438" width="12" height="12" fill="#8a94a6"/>
+<text x="88" y="448" font-family="sans-serif" font-size="12" fill="#1b1f24">single-shot</text>
+<rect x="188" y="438" width="12" height="12" fill="#2f6fdb"/>
+<text x="206" y="448" font-family="sans-serif" font-size="12" fill="#1b1f24">loop</text>
+<rect x="250" y="438" width="12" height="12" fill="#e0832b"/>
+<text x="268" y="448" font-family="sans-serif" font-size="12" fill="#1b1f24">loop-review</text>
+</svg>

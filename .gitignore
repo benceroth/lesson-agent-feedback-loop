@@ -1,0 +1,14 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+# scratch workspaces created by the loop (generated code runs here)
+runs/
+# local experiment output; committed results live in experiments/results/
+experiments/local/
+.env
+.env.*
+*.junit.xml

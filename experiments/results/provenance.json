@@ -1,0 +1,23 @@
+{
+  "provider": "scripted",
+  "model": "scripted-demo",
+  "date": "2026-10-20",
+  "runs": 10,
+  "seed": 20261020,
+  "tasks": [
+    "001-fix-off-by-one",
+    "002-add-input-validation",
+    "003-refactor-keep-behavior",
+    "004-write-missing-tests",
+    "005-impossible-spec"
+  ],
+  "modes": [
+    "single-shot",
+    "loop",
+    "loop-review"
+  ],
+  "loop_max_attempts": 4,
+  "python": "3.14.4",
+  "command": "python -m loop experiment --provider scripted --runs 10 --seed 20261020",
+  "note": "Scripted provider results are a harness demo, not a model benchmark."
+}

@@ -1,0 +1,21 @@
+[project]
+name = "lesson-agent-feedback-loop"
+version = "1.0.0"
+description = "A small, model-agnostic lab for measuring AI feedback loops: single-shot vs loop, with budgets, a reviewer role and a reward-hacking guard."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 140
+extend-exclude = ["tasks", "runs"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E501", "UP037"]
