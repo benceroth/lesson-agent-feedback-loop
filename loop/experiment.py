@@ -4,15 +4,22 @@ from __future__ import annotations
 
 import json
 import platform
+from collections.abc import Callable
 from datetime import date
 from pathlib import Path
-from typing import Callable
 
 from loop.budget import Budget
 from loop.chart import grouped_bar_svg
 from loop.metrics import (
-    DETERMINISTIC_COLUMNS, MODE_ORDER, RUN_COLUMNS, SUMMARY_COLUMNS,
-    failure_categories, read_csv, stop_reasons, summarize, write_csv,
+    DETERMINISTIC_COLUMNS,
+    MODE_ORDER,
+    RUN_COLUMNS,
+    SUMMARY_COLUMNS,
+    failure_categories,
+    read_csv,
+    stop_reasons,
+    summarize,
+    write_csv,
 )
 from loop.providers import make_provider
 from loop.runner import DEFAULT_WORK_ROOT, RunConfig, RunResult, run_task
@@ -184,7 +191,7 @@ def verify_results(results_dir: Path, work_root: Path = DEFAULT_WORK_ROOT, tasks
     if len(fresh) != len(committed):
         return [f"row count differs: committed {len(committed)}, fresh {len(fresh)}"]
     problems = []
-    for new, old in zip(fresh, committed):
+    for new, old in zip(fresh, committed, strict=True):
         for col in DETERMINISTIC_COLUMNS:
             if str(new[col]) != str(old[col]):
                 problems.append(f"{old['task']} {old['mode']} run {old['run']}: {col} committed={old[col]!r} fresh={new[col]!r}")

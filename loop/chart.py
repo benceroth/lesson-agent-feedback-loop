@@ -2,7 +2,7 @@
 
 from __future__ import annotations
 
-from typing import Sequence
+from collections.abc import Sequence
 from xml.sax.saxutils import escape
 
 PALETTE = ["#8a94a6", "#2f6fdb", "#e0832b", "#2a9d6f"]

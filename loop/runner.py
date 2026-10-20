@@ -4,9 +4,9 @@ from __future__ import annotations
 
 import shutil
 import time
+from collections.abc import Callable
 from dataclasses import asdict, dataclass, field
 from pathlib import Path
-from typing import Callable
 
 from loop.budget import Budget, BudgetTracker, ProgressTracker
 from loop.checks import Evaluation, evaluate, format_feedback, run_audit
@@ -33,6 +33,9 @@ class RunConfig:
     reviewer: bool = False
     keep_workspace: bool = False
     work_root: Path = DEFAULT_WORK_ROOT
+
+
+DEFAULT_CONFIG = RunConfig()
 
 
 @dataclass
@@ -127,7 +130,7 @@ def build_escalation(task: Task, outcome: str, attempts: list[AttemptRecord]) ->
 def run_task(
     task: Task,
     provider: Provider,
-    config: RunConfig = RunConfig(),
+    config: RunConfig = DEFAULT_CONFIG,
     reviewer_provider: Provider | None = None,
     mode: str = "loop",
     run_index: int = 0,

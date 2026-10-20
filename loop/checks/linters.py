@@ -5,8 +5,8 @@ from __future__ import annotations
 import re
 import subprocess
 import sys
+from collections.abc import Sequence
 from pathlib import Path
-from typing import Sequence
 
 from loop.checks.base import CheckResult, Failure, truncate
 

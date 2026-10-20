@@ -4,8 +4,8 @@ from __future__ import annotations
 
 import csv
 from collections import Counter, defaultdict
+from collections.abc import Iterable, Sequence
 from pathlib import Path
-from typing import Iterable, Sequence
 
 RUN_COLUMNS = [
     "task", "mode", "run", "seed", "provider", "model", "scenario", "outcome",
