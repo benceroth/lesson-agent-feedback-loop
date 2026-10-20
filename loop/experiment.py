@@ -181,6 +181,18 @@ def save_experiment(results: list[RunResult], out_dir: Path, provenance: dict) -
     write_report(read_csv(out_dir / "runs.csv"), out_dir, provenance)
 
 
+TOKEN_TOLERANCE = 0.05
+
+
+def _within_tolerance(fresh: object, committed: object) -> bool:
+    # The token proxy counts pytest output, whose wording and paths differ by OS and Python version.
+    try:
+        old = float(committed)
+        return abs(float(fresh) - old) <= TOKEN_TOLERANCE * max(old, 1.0)
+    except (TypeError, ValueError):
+        return False
+
+
 def verify_results(results_dir: Path, work_root: Path = DEFAULT_WORK_ROOT, tasks_dir: Path = TASKS_DIR) -> list[str]:
     """Re-run the committed scripted experiment and report any deterministic difference."""
     provenance = json.loads((results_dir / "provenance.json").read_text(encoding="utf-8"))
@@ -193,6 +205,8 @@ def verify_results(results_dir: Path, work_root: Path = DEFAULT_WORK_ROOT, tasks
     problems = []
     for new, old in zip(fresh, committed, strict=True):
         for col in DETERMINISTIC_COLUMNS:
+            if col == "tokens" and _within_tolerance(new[col], old[col]):
+                continue
             if str(new[col]) != str(old[col]):
                 problems.append(f"{old['task']} {old['mode']} run {old['run']}: {col} committed={old[col]!r} fresh={new[col]!r}")
     return problems
